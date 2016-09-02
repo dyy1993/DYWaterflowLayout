@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "DYWaterflowLayout"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.8'
   s.summary      = "A WaterflowLayout"
