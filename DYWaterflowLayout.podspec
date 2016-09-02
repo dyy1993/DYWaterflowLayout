@@ -16,10 +16,9 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://weibo.com/1800731733"
 
   s.source       = { :git => "http://EXAMPLE/DYWaterflowLayout.git", :tag => "0.0.1" }
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "DYWaterflowLayout", "DYWaterflowLayout/**/*.{h,m}"
 
   s.requires_arc = true
-
 
 
 end
