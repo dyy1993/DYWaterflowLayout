@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F9F6A681D7913BD00439ADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F6A671D7913BD00439ADD /* main.m */; };
+		2F9F6A6B1D7913BD00439ADD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F6A6A1D7913BD00439ADD /* AppDelegate.m */; };
+		2F9F6A6E1D7913BD00439ADD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F6A6D1D7913BD00439ADD /* ViewController.m */; };
+		2F9F6A711D7913BD00439ADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9F6A6F1D7913BD00439ADD /* Main.storyboard */; };
+		2F9F6A731D7913BD00439ADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F9F6A721D7913BD00439ADD /* Assets.xcassets */; };
+		2F9F6A761D7913BD00439ADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9F6A741D7913BD00439ADD /* LaunchScreen.storyboard */; };
+		2F9F6A811D7913BD00439ADD /* DYWaterflowLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F6A801D7913BD00439ADD /* DYWaterflowLayoutTests.m */; };
+		2F9F6A8C1D7913BD00439ADD /* DYWaterflowLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F6A8B1D7913BD00439ADD /* DYWaterflowLayoutUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F9F6A7D1D7913BD00439ADD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F9F6A5B1D7913BD00439ADD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F9F6A621D7913BD00439ADD;
+			remoteInfo = DYWaterflowLayout;
+		};
+		2F9F6A881D7913BD00439ADD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F9F6A5B1D7913BD00439ADD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F9F6A621D7913BD00439ADD;
+			remoteInfo = DYWaterflowLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F9F6A631D7913BD00439ADD /* DYWaterflowLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYWaterflowLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9F6A671D7913BD00439ADD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F9F6A691D7913BD00439ADD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F9F6A6A1D7913BD00439ADD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F9F6A6C1D7913BD00439ADD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2F9F6A6D1D7913BD00439ADD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2F9F6A701D7913BD00439ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F9F6A721D7913BD00439ADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F9F6A751D7913BD00439ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F9F6A771D7913BD00439ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F9F6A7C1D7913BD00439ADD /* DYWaterflowLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYWaterflowLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9F6A801D7913BD00439ADD /* DYWaterflowLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYWaterflowLayoutTests.m; sourceTree = "<group>"; };
+		2F9F6A821D7913BD00439ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F9F6A871D7913BD00439ADD /* DYWaterflowLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYWaterflowLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9F6A8B1D7913BD00439ADD /* DYWaterflowLayoutUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYWaterflowLayoutUITests.m; sourceTree = "<group>"; };
+		2F9F6A8D1D7913BD00439ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F9F6A601D7913BD00439ADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F9F6A791D7913BD00439ADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F9F6A841D7913BD00439ADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F9F6A5A1D7913BD00439ADD = {
+			isa = PBXGroup;
+			children = (
+				2F9F6A651D7913BD00439ADD /* DYWaterflowLayout */,
+				2F9F6A7F1D7913BD00439ADD /* DYWaterflowLayoutTests */,
+				2F9F6A8A1D7913BD00439ADD /* DYWaterflowLayoutUITests */,
+				2F9F6A641D7913BD00439ADD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F9F6A641D7913BD00439ADD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F9F6A631D7913BD00439ADD /* DYWaterflowLayout.app */,
+				2F9F6A7C1D7913BD00439ADD /* DYWaterflowLayoutTests.xctest */,
+				2F9F6A871D7913BD00439ADD /* DYWaterflowLayoutUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F9F6A651D7913BD00439ADD /* DYWaterflowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2F9F6A691D7913BD00439ADD /* AppDelegate.h */,
+				2F9F6A6A1D7913BD00439ADD /* AppDelegate.m */,
+				2F9F6A6C1D7913BD00439ADD /* ViewController.h */,
+				2F9F6A6D1D7913BD00439ADD /* ViewController.m */,
+				2F9F6A6F1D7913BD00439ADD /* Main.storyboard */,
+				2F9F6A721D7913BD00439ADD /* Assets.xcassets */,
+				2F9F6A741D7913BD00439ADD /* LaunchScreen.storyboard */,
+				2F9F6A771D7913BD00439ADD /* Info.plist */,
+				2F9F6A661D7913BD00439ADD /* Supporting Files */,
+			);
+			path = DYWaterflowLayout;
+			sourceTree = "<group>";
+		};
+		2F9F6A661D7913BD00439ADD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F9F6A671D7913BD00439ADD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F9F6A7F1D7913BD00439ADD /* DYWaterflowLayoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F9F6A801D7913BD00439ADD /* DYWaterflowLayoutTests.m */,
+				2F9F6A821D7913BD00439ADD /* Info.plist */,
+			);
+			path = DYWaterflowLayoutTests;
+			sourceTree = "<group>";
+		};
+		2F9F6A8A1D7913BD00439ADD /* DYWaterflowLayoutUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F9F6A8B1D7913BD00439ADD /* DYWaterflowLayoutUITests.m */,
+				2F9F6A8D1D7913BD00439ADD /* Info.plist */,
+			);
+			path = DYWaterflowLayoutUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F9F6A621D7913BD00439ADD /* DYWaterflowLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F9F6A901D7913BD00439ADD /* Build configuration list for PBXNativeTarget "DYWaterflowLayout" */;
+			buildPhases = (
+				2F9F6A5F1D7913BD00439ADD /* Sources */,
+				2F9F6A601D7913BD00439ADD /* Frameworks */,
+				2F9F6A611D7913BD00439ADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DYWaterflowLayout;
+			productName = DYWaterflowLayout;
+			productReference = 2F9F6A631D7913BD00439ADD /* DYWaterflowLayout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F9F6A7B1D7913BD00439ADD /* DYWaterflowLayoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F9F6A931D7913BD00439ADD /* Build configuration list for PBXNativeTarget "DYWaterflowLayoutTests" */;
+			buildPhases = (
+				2F9F6A781D7913BD00439ADD /* Sources */,
+				2F9F6A791D7913BD00439ADD /* Frameworks */,
+				2F9F6A7A1D7913BD00439ADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F9F6A7E1D7913BD00439ADD /* PBXTargetDependency */,
+			);
+			name = DYWaterflowLayoutTests;
+			productName = DYWaterflowLayoutTests;
+			productReference = 2F9F6A7C1D7913BD00439ADD /* DYWaterflowLayoutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F9F6A861D7913BD00439ADD /* DYWaterflowLayoutUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F9F6A961D7913BD00439ADD /* Build configuration list for PBXNativeTarget "DYWaterflowLayoutUITests" */;
+			buildPhases = (
+				2F9F6A831D7913BD00439ADD /* Sources */,
+				2F9F6A841D7913BD00439ADD /* Frameworks */,
+				2F9F6A851D7913BD00439ADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F9F6A891D7913BD00439ADD /* PBXTargetDependency */,
+			);
+			name = DYWaterflowLayoutUITests;
+			productName = DYWaterflowLayoutUITests;
+			productReference = 2F9F6A871D7913BD00439ADD /* DYWaterflowLayoutUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F9F6A5B1D7913BD00439ADD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = yang;
+				TargetAttributes = {
+					2F9F6A621D7913BD00439ADD = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					2F9F6A7B1D7913BD00439ADD = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 2F9F6A621D7913BD00439ADD;
+					};
+					2F9F6A861D7913BD00439ADD = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 2F9F6A621D7913BD00439ADD;
+					};
+				};
+			};
+			buildConfigurationList = 2F9F6A5E1D7913BD00439ADD /* Build configuration list for PBXProject "DYWaterflowLayout" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F9F6A5A1D7913BD00439ADD;
+			productRefGroup = 2F9F6A641D7913BD00439ADD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F9F6A621D7913BD00439ADD /* DYWaterflowLayout */,
+				2F9F6A7B1D7913BD00439ADD /* DYWaterflowLayoutTests */,
+				2F9F6A861D7913BD00439ADD /* DYWaterflowLayoutUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F9F6A611D7913BD00439ADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9F6A761D7913BD00439ADD /* LaunchScreen.storyboard in Resources */,
+				2F9F6A731D7913BD00439ADD /* Assets.xcassets in Resources */,
+				2F9F6A711D7913BD00439ADD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F9F6A7A1D7913BD00439ADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F9F6A851D7913BD00439ADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F9F6A5F1D7913BD00439ADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9F6A6E1D7913BD00439ADD /* ViewController.m in Sources */,
+				2F9F6A6B1D7913BD00439ADD /* AppDelegate.m in Sources */,
+				2F9F6A681D7913BD00439ADD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F9F6A781D7913BD00439ADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9F6A811D7913BD00439ADD /* DYWaterflowLayoutTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F9F6A831D7913BD00439ADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9F6A8C1D7913BD00439ADD /* DYWaterflowLayoutUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F9F6A7E1D7913BD00439ADD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F9F6A621D7913BD00439ADD /* DYWaterflowLayout */;
+			targetProxy = 2F9F6A7D1D7913BD00439ADD /* PBXContainerItemProxy */;
+		};
+		2F9F6A891D7913BD00439ADD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F9F6A621D7913BD00439ADD /* DYWaterflowLayout */;
+			targetProxy = 2F9F6A881D7913BD00439ADD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F9F6A6F1D7913BD00439ADD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F9F6A701D7913BD00439ADD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F9F6A741D7913BD00439ADD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F9F6A751D7913BD00439ADD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F9F6A8E1D7913BD00439ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2F9F6A8F1D7913BD00439ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F9F6A911D7913BD00439ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DYWaterflowLayout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yang.DYWaterflowLayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2F9F6A921D7913BD00439ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DYWaterflowLayout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yang.DYWaterflowLayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2F9F6A941D7913BD00439ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DYWaterflowLayoutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yang.DYWaterflowLayoutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DYWaterflowLayout.app/DYWaterflowLayout";
+			};
+			name = Debug;
+		};
+		2F9F6A951D7913BD00439ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DYWaterflowLayoutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yang.DYWaterflowLayoutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DYWaterflowLayout.app/DYWaterflowLayout";
+			};
+			name = Release;
+		};
+		2F9F6A971D7913BD00439ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DYWaterflowLayoutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yang.DYWaterflowLayoutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DYWaterflowLayout;
+			};
+			name = Debug;
+		};
+		2F9F6A981D7913BD00439ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DYWaterflowLayoutUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yang.DYWaterflowLayoutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DYWaterflowLayout;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F9F6A5E1D7913BD00439ADD /* Build configuration list for PBXProject "DYWaterflowLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F9F6A8E1D7913BD00439ADD /* Debug */,
+				2F9F6A8F1D7913BD00439ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F9F6A901D7913BD00439ADD /* Build configuration list for PBXNativeTarget "DYWaterflowLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F9F6A911D7913BD00439ADD /* Debug */,
+				2F9F6A921D7913BD00439ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2F9F6A931D7913BD00439ADD /* Build configuration list for PBXNativeTarget "DYWaterflowLayoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F9F6A941D7913BD00439ADD /* Debug */,
+				2F9F6A951D7913BD00439ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2F9F6A961D7913BD00439ADD /* Build configuration list for PBXNativeTarget "DYWaterflowLayoutUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F9F6A971D7913BD00439ADD /* Debug */,
+				2F9F6A981D7913BD00439ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F9F6A5B1D7913BD00439ADD /* Project object */;
+}
