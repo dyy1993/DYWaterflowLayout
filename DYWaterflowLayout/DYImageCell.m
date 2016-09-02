@@ -7,7 +7,6 @@
 //
 
 #import "DYImageCell.h"
-#import <UIImageView+WebCache.h>
 @interface DYImageCell ()
 
 @end

@@ -10,7 +10,6 @@
 #import "DYWaterflowLayout.h"
 #import <MJRefresh.h>
 #import "DYImageCell.h"
-#import <UIImageView+WebCache.h>
 @interface ViewController ()<UICollectionViewDataSource,DYWaterflowLayoutDelegate>
 
 @property (nonatomic, strong) NSArray *images;
@@ -77,7 +76,6 @@ static NSString * const DYImageId = @"imageCell";
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self.items = 10;
         
-        // 刷新数据
         [self.collectionView reloadData];
         
         [self.collectionView.mj_header endRefreshing];
@@ -88,7 +86,7 @@ static NSString * const DYImageId = @"imageCell";
 {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self.items += 10;
-        // 刷新数据
+        
         [self.collectionView reloadData];
         
         [self.collectionView.mj_footer endRefreshing];

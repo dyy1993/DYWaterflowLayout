@@ -8,21 +8,21 @@
 
 #import "DYWaterflowLayout.h"
 
-/** 默认的列数 */
+/**  Default column count */
 static const NSInteger DYDefaultColumnCount = 2;
-/** 每一列之间的间距 */
+/** Default column margin */
 static const CGFloat DYDefaultColumnMargin = 10;
-/** 每一行之间的间距 */
+/** Default row margin */
 static const CGFloat DYDefaultRowMargin = 10;
-/** 边缘间距 */
+/** Default edgeInsets */
 static const UIEdgeInsets DYDefaultEdgeInsets = {10, 10, 10, 10};
 
 @interface DYWaterflowLayout()
-/** 存放所有cell的布局属性 */
+
 @property (nonatomic, strong) NSMutableArray *attrsArray;
-/** 存放所有列的当前高度 */
+
 @property (nonatomic, strong) NSMutableArray *columnHeights;
-/** 内容的高度 */
+
 @property (nonatomic, assign) CGFloat contentHeight;
 
 - (CGFloat)rowMargin;
@@ -33,7 +33,7 @@ static const UIEdgeInsets DYDefaultEdgeInsets = {10, 10, 10, 10};
 
 @implementation DYWaterflowLayout
 
-#pragma mark - 常见数据处理
+#pragma mark - data
 - (CGFloat)rowMargin
 {
     if ([self.delegate respondsToSelector:@selector(rowMarginInWaterflowLayout:)]) {
@@ -70,7 +70,7 @@ static const UIEdgeInsets DYDefaultEdgeInsets = {10, 10, 10, 10};
     }
 }
 
-#pragma mark - 懒加载
+#pragma mark - lazy
 - (NSMutableArray *)columnHeights
 {
     if (!_columnHeights) {
@@ -88,7 +88,7 @@ static const UIEdgeInsets DYDefaultEdgeInsets = {10, 10, 10, 10};
 }
 
 /**
- * 初始化
+ * Initialize
  */
 - (void)prepareLayout
 {
@@ -96,56 +96,55 @@ static const UIEdgeInsets DYDefaultEdgeInsets = {10, 10, 10, 10};
     
     self.contentHeight = 0;
     
-    // 清除以前计算的所有高度
+    //  remove columnHeight
     [self.columnHeights removeAllObjects];
     for (NSInteger i = 0; i < self.columnCount; i++) {
         [self.columnHeights addObject:@(self.edgeInsets.top)];
     }
     
-    // 清除之前所有的布局属性
+    // remove attrs
     [self.attrsArray removeAllObjects];
-    // 开始创建每一个cell对应的布局属性
+    
+    // create Attributes of item
     NSInteger count = [self.collectionView numberOfItemsInSection:0];
     for (NSInteger i = 0; i < count; i++) {
-        // 创建位置
+      
         NSIndexPath *indexPath = [NSIndexPath indexPathForItem:i inSection:0];
-        // 获取indexPath位置cell对应的布局属性
+        
         UICollectionViewLayoutAttributes *attrs = [self layoutAttributesForItemAtIndexPath:indexPath];
         [self.attrsArray addObject:attrs];
     }
 }
 
-/**
- * 决定cell的排布
- */
+
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
     return self.attrsArray;
 }
 
 /**
- * 返回indexPath位置cell对应的布局属性
+ * return cell Attributes at IndexPath
  */
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    // 创建布局属性
+   
     UICollectionViewLayoutAttributes *attrs = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     
-    // collectionView的宽度
+   
     CGFloat collectionViewW = self.collectionView.frame.size.width;
     
-    // 设置布局属性的frame
+    // setup layoutAttributes frame
     CGFloat w = (collectionViewW - self.edgeInsets.left - self.edgeInsets.right - (self.columnCount - 1) * self.columnMargin) / self.columnCount;
     CGSize size = [self.delegate waterflowLayout:self heightForItemAtIndexPath:indexPath];
     CGFloat h = 0;
     if (size.width != 0) {
          h = w * size.height / size.width;
     }                                                                                              
-    // 找出高度最短的那一列
+    // find minColumnHeight
     NSInteger destColumn = 0;
     CGFloat minColumnHeight = [self.columnHeights[0] doubleValue];
     for (NSInteger i = 1; i < self.columnCount; i++) {
-        // 取得第i列的高度
+        
         CGFloat columnHeight = [self.columnHeights[i] doubleValue];
         
         if (minColumnHeight > columnHeight) {
@@ -161,10 +160,10 @@ static const UIEdgeInsets DYDefaultEdgeInsets = {10, 10, 10, 10};
     }
     attrs.frame = CGRectMake(x, y, w, h);
     
-    // 更新最短那列的高度
+    // save min height column
     self.columnHeights[destColumn] = @(CGRectGetMaxY(attrs.frame));
     
-    // 记录内容的高度
+   
     CGFloat columnHeight = [self.columnHeights[destColumn] doubleValue];
     if (self.contentHeight < columnHeight) {
         self.contentHeight = columnHeight;
